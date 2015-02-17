@@ -19,7 +19,7 @@ password: p@ssw0rd1
 When we try to login, it may won't allow, and keep giving us the same window. To fix this issue, we need to modify session_store.rb file under
 /opt/chef-server/embedded/service/chef-server-webui/config/initializers file:
 
-#ChefServerWebui::Application.config.session_store :cookie_store, :key => '_sandbox_session', :domain => :all(replace this line with the line below)
+ChefServerWebui::Application.config.session_store :cookie_store, :key => '_sandbox_session', :domain => :all(replace this line with the line below)
 ChefServerWebui::Application.config.session_store :cookie_store, :key => '_sandbox_session', :domain => '#public DNS of your server'
 
 Note that we changed :all to public domain name.
