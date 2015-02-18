@@ -12,7 +12,7 @@ $ sudo apt-get install zlib1g-dev $ sudo /opt/chef/embedded/bin/gem install knif
 
 1. On the workstation, create the required cookbooks and upload to the Chef Server. 
   
-    $ cd ~/chef-repo/cookbooks/
+    `$ cd ~/chef-repo/cookbooks/`
 
 2. Upload the cookbooks to the server:
 
