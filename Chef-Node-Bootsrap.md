@@ -16,7 +16,7 @@ $ sudo apt-get install zlib1g-dev $ sudo /opt/chef/embedded/bin/gem install knif
 
 2. Upload the cookbooks to the server:
 
-    $ knife cookbook upload java apt $ knife cookbook upload chef-sugar
+    `$ knife cookbook upload java apt $ knife cookbook upload chef-sugar`
 
 ## Create a Role Using JSON
 
