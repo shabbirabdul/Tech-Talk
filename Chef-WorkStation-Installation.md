@@ -32,7 +32,7 @@ $ cd ~
 $ git clone git://github.com/opscode/chef-repo.git
 ```
 
-### Reate .chef Directory
+### Create .chef Directory
 
 The .chef directory is used to store three files:
 ```
