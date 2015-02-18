@@ -12,11 +12,11 @@ $ sudo apt-get install zlib1g-dev $ sudo /opt/chef/embedded/bin/gem install knif
 
 1. On the workstation, create the required cookbooks and upload to the Chef Server. 
   
-    `$ cd ~/chef-repo/cookbooks/`
+    $ cd ~/chef-repo/cookbooks/
 
 2. Upload the cookbooks to the server:
 
-    `$ knife cookbook upload java apt $ knife cookbook upload chef-sugar`
+    $ knife cookbook upload java apt $ knife cookbook upload chef-sugar
 
 ## Create a Role Using JSON
 
@@ -26,7 +26,7 @@ A role is a way to define certain patterns and processes that exist across nodes
 
 We will create a role named "my_app" using the following command:
 
-    `export EDITOR=$(which vi) $ knife role create my_app`
+    export EDITOR=$(which vi) $ knife role create my_app
 
 Then, at the knife role create command, an editing window will be opened.
 
@@ -40,7 +40,7 @@ In the editor, fill the file contents in JSON format as below:
 
 After finishing edit, we get:
 
-    `Created role[my_app]`
+    Created role[my_app]
 
 ## Bootstrap an EC2 instance
 
