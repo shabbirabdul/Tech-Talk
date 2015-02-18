@@ -2,11 +2,11 @@
 
 ## Install Chef server on Amazon EC2 Ubuntu 14.04
 
-1. Download Chef Server 
+### Download Chef Server 
 ```
 wget https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef-server_11.0.10-1.ubuntu.12.04_amd64.deb
 ```
-2. Install the Chef server
+### Install the Chef server
 
 `sudo dpkg -i chef-server*`
 
