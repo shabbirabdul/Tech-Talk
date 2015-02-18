@@ -94,19 +94,14 @@ Created user
 Configuration file written to /home/ubuntu/chef-repo/.chef/knife.rb 
 ```
 
-$ knife user list 
-Verify that the files are in the .chef folder:
-Verify the chef-client install
-
 A workstation is installed correctly when it is able to use knife to communicate with the Chef server. 
 Verify that a workstation can connect to the Chef server using the following command:
 
-`$ knife user list` should list all users
+`$ knife user list` should list all users.
 
-`$ knife client list` 
+`$ knife client list` is used to check if chef-client is install properly.
 
-knife.rb 
-Just for reference, here is knife.rb in `/home/ubuntu/chef-repo/.chef/` folder:
+Just for reference, here is `knife.rb` in `/home/ubuntu/chef-repo/.chef/` folder:
 ```
 log_level :info log_location STDOUT node_name 'ubuntu' 
 client_key '/home/ubuntu/chef-repo/.chef/bogotobogo.pem' 
