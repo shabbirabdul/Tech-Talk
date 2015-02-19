@@ -48,3 +48,49 @@ Now we are all set to bootstrap an EC2 instance with the my_app role with the fo
 ```
 $sudo knife ec2 server create -I ami-9eaa1cf6 -r "role[my_app]" -Z us-east-1c -g Chef11_Server_On_EC2_Security_Group --ssh-key Chef_11_Server -i Chef_11_Server.pem -f t2.micro -A 'AK' -K "bm" --region us-east-1 --ssh-user ubuntu
 ```
+
+####The options used in the knife ec2 server create command are as below:
+
+-I IMAGE, --image IMAGE
+
+The name of the image that identifies the operating system (and version) that will be used to create the virtual machine.
+
+-r RUN_LIST, --run-list RUN_LIST
+
+A comma-separated list of roles and/or recipes to be applied.
+
+-Z ZONE, --availability-zone ZONE
+
+The name of the availability zone. Each availability zone is unique within a region. Default: us-east-1b.
+
+-g X,Y,Z, --security-group-ids X,Y,Z
+
+A comma-separated list of security group identifiers. Required when using Amazon Virtual Private Cloud.
+
+--ssh-key KEY
+
+The SSH key for the Amazon EC2 environment. The name of ec2-keypair.
+
+-i IDENTITY_FILE, --identity-file IDENTITY_FILE
+
+The SSH identity file used for authentication. Key-based authentication is recommended. Refers to the private part of that key pair.
+
+-f FLAVOR, --flavor FLAVOR
+
+The name of the flavor that identifies the hardware configuration of the server, including disk space, memory capacity, and CPU priority.
+
+-A KEY, --aws-access-key-id KEY
+
+The access key identifier used with Amazon EC2.
+
+-K SECRET, --aws-secret-access-key SECRET
+
+The secret access key for the API endpoint used with Amazon EC2.
+
+--region REGION
+
+The name of the region from which instances of hosted applications are launched. Each region has a unique endpoint.
+
+-x USERNAME, --ssh-user USERNAME
+
+The SSH user name.
